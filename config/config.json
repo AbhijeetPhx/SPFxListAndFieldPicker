@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "list-and-field-picker-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/listAndFieldPicker/ListAndFieldPickerWebPart.js",
+          "manifest": "./src/webparts/listAndFieldPicker/ListAndFieldPickerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ListAndFieldPickerWebPartStrings": "lib/webparts/listAndFieldPicker/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}
